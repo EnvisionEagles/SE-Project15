@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Teacher Signup Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h3 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      color: #555;
+    }
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .btn-success {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-success:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+{% include "exam/navbar.html" %}
+
+<div class="container">
+  <h3>Teacher Signup Form</h3>
+  <form method="POST" autocomplete="off" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      {% render_field userForm.first_name|attr:'required:true' class="form-control" placeholder="First Name" %}
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      {% render_field userForm.last_name|attr:'required:true' class="form-control" placeholder="Last Name" %}
+    </div>
+    <div class="form-group">
+      <label for="mobile">Contact</label>
+      {% render_field teacherForm.mobile|attr:'required:true' class="form-control" placeholder="Contact Number" %}
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      {% render_field teacherForm.address|attr:'required:true' class="form-control" placeholder="Address" %}
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      {% render_field userForm.username|attr:'required:true' class="form-control" placeholder="Username" %}
+    </div>
+    <div class="form-group">
+      <label for="inputPassword4">Password</label>
+      {% render_field userForm.password|attr:'required:true' class="form-control" placeholder="Password" %}
+    </div>
+    <div class="form-group">
+      <label for="profile_pic">Profile Picture</label>
+      {% render_field teacherForm.profile_pic|attr:'required:true' class="form-control" placeholder="Upload Profile Picture" %}
+    </div>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+  </form>
+</div>
+</body>
+</html>

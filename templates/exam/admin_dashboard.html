@@ -1,0 +1,117 @@
+{% extends 'exam/adminbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+        /* Custom styles */
+        .order-card {
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .order-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-c-pink {
+            background: #FF6B6B;
+        }
+
+        .bg-c-green {
+            background: #66DE93;
+        }
+
+        .bg-c-blue {
+            background: #3D7AFD;
+        }
+
+        .bg-c-yellow {
+            background: #FFD166;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .fas {
+            margin-right: 10px;
+        }
+
+        header {
+            left: 0px;
+            right: 0px;
+        }
+
+        /* Custom scrollbar */
+        .scrollable {
+            max-height: 80vh; /* Adjust as needed */
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<div class="container mt-5">
+    <div class="row scrollable">
+        <div class="col-md-6 col-lg-3">
+            <a href="admin-view-student" style="text-decoration: none; color: inherit;">
+                <div class="card bg-c-pink order-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Registered Students</h5>
+                        <h2><i class="fas fa-user-graduate"></i> {{ total_student }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <a href="admin-view-teacher" style="text-decoration: none; color: inherit;">
+                <div class="card bg-c-green order-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Teachers</h5>
+                        <h2><i class="fas fa-chalkboard-teacher"></i> {{ total_teacher }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <a href="admin-view-course" style="text-decoration: none; color: inherit;">
+                <div class="card bg-c-blue order-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Courses</h5>
+                        <h2><i class="fas fa-book"></i> {{ total_course }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <a href="admin-view-question" style="text-decoration: none; color: inherit;">
+                <div class="card bg-c-yellow order-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Available Questions</h5>
+                        <h2><i class="fas fa-question-circle"></i> {{ total_question }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock content %}

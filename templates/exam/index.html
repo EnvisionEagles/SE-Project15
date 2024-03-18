@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Navigator System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-p6TD2u8Q+JjfmphP9w4u+QDRyJU5mxkZwFlgNfeJvyNHjyn7NXmwzW/F5y9cQz4aM6jXtkhAH7Ac2JFXM3c/Pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'exam/css/bootstrap.min.css' %}">
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .footer {
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            margin-bottom: 0;
+        }
+
+        .jumbotron h2 {
+            color: #17a2b8;
+        }
+
+        .jumbotron p {
+            color: #6c757d;
+        }
+
+        .jumbotron .btn {
+            border-radius: 0;
+            padding: 10px 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    {% include "exam/navbar.html" %}
+    <br>
+    <section id="section-jumbotron" class="jumbotron text-center">
+        <div class="container">
+            <h2 class="display-3">Course Navigator System</h2>
+            <p class="lead">Attend your examinations online!</p>
+            <p>Sign Up now to start your first online examination</p>
+            <p><strong>Start Your Journey Here:</strong></p>
+            <a href="/student/studentsignup" class="btn btn-lg btn-info"><i class="fa fa-graduation-cap"
+                    aria-hidden="true"></i> Sign Up as Student</a>
+        </div>
+    </section>
+    {% include "exam/footer.html" %}
+</body>
+
+</html>
