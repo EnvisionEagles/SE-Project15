@@ -1,6 +1,7 @@
 # SE-Project15
 
 **Product vision**
+
 FOR the UNT students WHO need to select their courses, THE Course Evaluator is a web-based
 application THAT recommends the courses to students based on their test results, provides
 notifications about the course registration and instructors available for that course UNLIKE
