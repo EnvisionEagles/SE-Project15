@@ -8,8 +8,11 @@ canvas OUR application provides feedback and is feasible.
 
 **Technologies used**
 Programming language: Python, HTML,CSS
+
 IDE: Visual Studio
+
 Framework: Django
+
 Database: Sql lite
 
 **steps to run the application**
