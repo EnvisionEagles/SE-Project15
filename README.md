@@ -7,6 +7,7 @@ notifications about the course registration and instructors available for that c
 canvas OUR application provides feedback and is feasible.
 
 **Technologies used**
+
 Programming language: Python, HTML,CSS
 
 IDE: Visual Studio
