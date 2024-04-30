@@ -1,24 +1,16 @@
-# SE-Project15
+# course_navigator
 
-**Product vision**
+A new Flutter project.
 
-FOR the UNT students WHO need to select their courses, THE Course Evaluator is a web-based
-application THAT recommends the courses to students based on their test results, provides
-notifications about the course registration and instructors available for that course UNLIKE
-canvas OUR application provides feedback and is feasible.
+## Getting Started
 
-**Technologies used**
+This project is a starting point for a Flutter application.
 
-Programming language: Python, HTML,CSS
+A few resources to get you started if this is your first Flutter project:
 
-IDE: Visual Studio
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-Framework: Django
-
-Database: Sql lite
-
-**steps to run the application**
-  1. Open command prompt on the project path
-  2. And run the command **python manage.py runserver**
-  3. We will get the localhost link to run our application in browser.
-  4. We can check the working and different features of application through navigating.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27046103240",
+    "project_id": "coursenavig",
+    "storage_bucket": "coursenavig.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27046103240:android:b50d0105487ed85e78fdfd",
+        "android_client_info": {
+          "package_name": "com.example.course_navigator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALmVv3yHuhnFqC0AsduMLXO_3dZu-WG28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
